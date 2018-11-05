@@ -1,2 +1,5 @@
 # SketchBookkeeper.github.io
-A blog about the programming I learn and want to share.
+A blog.
+
+## Local Development
+`bundle exec jekyll serve`

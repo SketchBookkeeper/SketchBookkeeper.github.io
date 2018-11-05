@@ -1,7 +1,7 @@
 //--------------------------------------------------------------
-// HELPERS
-// Functions and Mixins
+// Nav
 //--------------------------------------------------------------
-
-@import 'rem-calc';
-@import 'media-query';
+.nav {
+	margin: 0 auto;
+	max-width: $large-width;
+}
