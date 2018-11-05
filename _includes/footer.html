@@ -1,0 +1,16 @@
+<footer>
+	<div class="wrapper-full xs-mx-auto">
+		<div class="xs-flex xs-flex-justify-space-between xs-border-top-lighter xs-px1 md-px0 xs-pb3 xs-pt2">
+			{% if page.url != "/" %}
+				<a href="/">More Posts</a>
+			{% else %}
+				<a href="/about">About</a>
+			{% endif %}
+
+			<a href="{{ site.github_url }}" title="View My GitHub Profile">
+				<span class="visual-hide">View My Github Profile</span>
+				{%- include svgs/github-octocat.svg -%}
+			</a>
+		</div>
+	</div>
+</footer>

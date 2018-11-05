@@ -1,0 +1,29 @@
+//--------------------------------------------------------------
+// Helpers
+//--------------------------------------------------------------
+
+.visual-hide {
+	@include visuallyhidden;
+}
+
+.theme-border-top {
+	border-top: 3px solid $theme-blue;
+}
+
+.text-theme {
+	color: $theme-blue !important;
+}
+
+.wrapper-large {
+	max-width: $large-width;
+}
+
+.wrapper-full {
+	max-width: $full-width;
+}
+
+.svg-large {
+	height: 50px;
+	vertical-align: middle;
+	width: 50px;
+}

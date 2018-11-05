@@ -21,9 +21,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: paul-allen-io
 github_username:  SketchBookkepper
+github_url: https://github.com/SketchBookkeeper
+codepen_url: https://codepen.io/sketchbookkeeper
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 # theme: minima
 plugins:
   - jekyll-feed

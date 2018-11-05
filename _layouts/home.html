@@ -3,16 +3,12 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-	<h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
 	<ul class="post-list list-unstyled">
 	  {%- for post in site.posts -%}
-	  <li>
+	  <li class="card xs-p2 xs-mb4 theme-border-top">
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<span class="post-meta">{{ post.date | date: date_format }}</span>
 		<h3>

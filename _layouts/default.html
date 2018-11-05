@@ -4,19 +4,13 @@
 {%- include head.html -%}
 
 <body class="fill-gray-lighter">
+	{%- include header.html -%}
 
-	<div class="">
-		{%- include header.html -%}
+	<main id="main" class="clearfix wrapper-full xs-col-12 md-col-9 xs-mx-auto xs-p-2" aria-label="Content">
+		{{ content }}
+	</main>
 
-		<main class="clearfix xs-col-9 xs-mx-auto xs-p-2" aria-label="Content">
-
-			{{ content }}
-
-		</main>
-
-		{%- include footer.html -%}
-	</div>
-
+	{%- include footer.html -%}
 </body>
 
 </html>
