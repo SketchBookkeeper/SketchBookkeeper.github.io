@@ -6,25 +6,20 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-	<ul class="post-list list-unstyled">
-	  {%- for post in site.posts -%}
-	  <li class="card xs-p2 xs-mb4 theme-border-top">
-		<div class="md-flex md-flex-justify-space-between">
-			<h2 class="xs-text-2 md-mr3">
-			<a class="post-link" href="{{ post.url | relative_url }}">
-				{{ post.title | escape }}
-			</a>
-			</h2>
+  <ul class="post-list list-unstyled">
+    {%- for post in site.posts -%}
+    <li class="card xs-p2 xs-mb4 theme-border-top">
+      <div class="md-flex md-flex-justify-space-between">
+        <h2 class="xs-text-2 md-mr3">
+          <a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a>
+        </h2>
 
-			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			<span class="post-meta xs-text-6 text-gray-lightest">{{ post.date | date: date_format }}</span>
-		</div>
-		<div class="xs-mt2">
-			{{ post.excerpt }}
-		</div>
-	  </li>
-	  {%- endfor -%}
-	</ul>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta xs-text-6 text-gray-lightest">{{ post.date | date: date_format }}</span>
+      </div>
+      <div class="xs-mt2">{{ post.excerpt }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
   {%- endif -%}
-
 </div>
