@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<article class="xs-p2 xs-mb4 page">
+<article class="xs-mb4 page">
   <div class="page-content card xs-p2 xs-mb4">
     <header class="page-header xs-mb2">
       <h1 class="page-title">{{ page.title | escape }}</h1>
     </header>
 
-    {{ content }}
+    <div class="post-content">
+      {{ content }}
+    </div>
   </div>
 </article>
