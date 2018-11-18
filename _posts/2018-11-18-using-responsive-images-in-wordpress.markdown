@@ -2,7 +2,6 @@
 layout: post
 title:  "Using Responsive Images in WordPress"
 date:   2018-11-17 15:38:01 -0600
-categories: wordpress
 ---
 
 Images generally account for a large amount data sent when serving a website. In this post I'll share some ways you can save users some bytes by serving images that fit the size of the device. There are a couple of tips you should know when using responsive images in WordPress.
